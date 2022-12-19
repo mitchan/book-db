@@ -1,0 +1,16 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Lord of the Rings",
+      "author": "J. R. R. Tolkien",
+      "isbn": "9788845290053"
+    },
+    {
+      "id": 2,
+      "title": "IT",
+      "author": "Stephen King",
+      "isbn": "9780450411434"
+    }
+  ]
+}
