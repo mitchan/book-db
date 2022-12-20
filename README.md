@@ -4,7 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Start the [JSON server](https://github.com/typicode/json-server) with `npm run start:server`
+
+- Run `npm start` for a dev server. Navigate to `http://localhost:4200/books` to view the list of books and start navigating.
 
 ## Code scaffolding
 
