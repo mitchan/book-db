@@ -11,9 +11,10 @@ import { MaterialModule } from './material/material.module';
 import { FormsModule } from '@angular/forms';
 import { BookFormComponent } from './book-form/book-form.component';
 import { BookCreateComponent } from './book-create/book-create.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
-  declarations: [AppComponent, BookListComponent, BookDetailComponent, BookFormComponent, BookCreateComponent],
+  declarations: [AppComponent, BookListComponent, BookDetailComponent, BookFormComponent, BookCreateComponent, LoadingComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -1,6 +1,11 @@
 <h1>List of books</h1>
 
-<table mat-table [dataSource]="books" class="mat-elevation-z8">
+<table
+  *ngIf="books.length > 0"
+  mat-table
+  [dataSource]="books"
+  class="mat-elevation-z8"
+>
   <!-- title -->
   <ng-container matColumnDef="title">
     <th mat-header-cell *matHeaderCellDef>Title</th>
@@ -26,3 +31,5 @@
     (click)="onRowClicked(row)"
   ></tr>
 </table>
+
+<span *ngIf="books.length === 0">No books yet</span>
