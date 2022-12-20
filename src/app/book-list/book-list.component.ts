@@ -23,4 +23,8 @@ export class BookListComponent implements OnInit {
   onRowClicked(book: Book): void {
     this.router.navigate(['/books', book.id]);
   }
+
+  onCreate(): void {
+    this.router.navigate(['/books', 'create']);
+  }
 }
