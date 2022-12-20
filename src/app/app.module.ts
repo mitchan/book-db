@@ -9,9 +9,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 import { MaterialModule } from './material/material.module';
 import { FormsModule } from '@angular/forms';
+import { BookFormComponent } from './book-form/book-form.component';
+import { BookCreateComponent } from './book-create/book-create.component';
 
 @NgModule({
-  declarations: [AppComponent, BookListComponent, BookDetailComponent],
+  declarations: [AppComponent, BookListComponent, BookDetailComponent, BookFormComponent, BookCreateComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

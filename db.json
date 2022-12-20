@@ -1,16 +1,22 @@
 {
   "books": [
     {
-      "id": 1,
+      "id": "a24df9bf-9599-4727-8004-873d5980ac1a",
       "title": "The Lord of the Rings",
       "author": "J. R. R. Tolkien",
       "isbn": "9788845290053"
     },
     {
-      "id": 2,
+      "id": "e75b9bab-922e-48f1-b836-2b455c093ac0",
       "title": "IT",
       "author": "Stephen King",
       "isbn": "9780450411434"
+    },
+    {
+      "author": "Test author asda",
+      "id": "edc578c7-eb03-4f05-bfa6-35f75ecf7125",
+      "isbn": "1231231",
+      "title": "Test book"
     }
   ]
 }

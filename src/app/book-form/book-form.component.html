@@ -1,0 +1,18 @@
+<form *ngIf="book" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="outline">
+    <mat-label>Title</mat-label>
+    <input name="title" matInput [(ngModel)]="book.title" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Author</mat-label>
+    <input name="author" matInput [(ngModel)]="book.author" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>ISBN</mat-label>
+    <input name="isbn" matInput [(ngModel)]="book.isbn" />
+  </mat-form-field>
+
+  <button mat-flat-button color="primary">Submit</button>
+</form>

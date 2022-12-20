@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+
 import { Book } from '../core/models/book';
 import { BookService } from '../core/services/book.service';
 
@@ -25,9 +26,5 @@ export class BookDetailComponent implements OnInit {
         ...book,
       };
     });
-  }
-
-  onSubmit() {
-    console.log(this.book);
   }
 }
