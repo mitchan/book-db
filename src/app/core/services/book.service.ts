@@ -48,4 +48,12 @@ export class BookService {
       tap(() => this.loadingService.stopLoading())
     );
   }
+
+  deleteBook(id: string) {
+    return this.http.delete<Book>(`${this.basePath}/${id}`).pipe(
+      tap(() => this.loadingService.startLoading()),
+      delay(750),
+      tap(() => this.loadingService.stopLoading())
+    );
+  }
 }

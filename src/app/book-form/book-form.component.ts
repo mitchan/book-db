@@ -15,6 +15,12 @@ export class BookFormComponent {
 
   constructor(private bookService: BookService, private router: Router) {}
 
+  onDelete() {
+    this.bookService.deleteBook(this.book.id).subscribe(() => {
+      this.router.navigate(['/books']);
+    });
+  }
+
   onSubmit() {
     if (this.book.id) {
       // edit

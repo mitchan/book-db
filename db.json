@@ -11,12 +11,6 @@
       "title": "IT",
       "author": "Stephen King",
       "isbn": "9780450411434"
-    },
-    {
-      "author": "Test author",
-      "id": "edc578c7-eb03-4f05-bfa6-35f75ecf7125",
-      "isbn": "1231231",
-      "title": "Test book"
     }
   ]
 }
