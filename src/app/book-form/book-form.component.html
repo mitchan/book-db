@@ -1,17 +1,17 @@
-<form *ngIf="book" (ngSubmit)="onSubmit()">
+<form *ngIf="book" (ngSubmit)="onSubmit()" [formGroup]="bookForm">
   <mat-form-field appearance="outline">
     <mat-label>Title</mat-label>
-    <input name="title" matInput [(ngModel)]="book.title" />
+    <input name="title" matInput formControlName="title" />
   </mat-form-field>
 
   <mat-form-field appearance="outline">
     <mat-label>Author</mat-label>
-    <input name="author" matInput [(ngModel)]="book.author" />
+    <input name="author" matInput formControlName="author" />
   </mat-form-field>
 
   <mat-form-field appearance="outline">
     <mat-label>ISBN</mat-label>
-    <input name="isbn" matInput [(ngModel)]="book.isbn" />
+    <input name="isbn" matInput formControlName="isbn" />
   </mat-form-field>
 
   <button type="submit" mat-flat-button color="primary">Submit</button>

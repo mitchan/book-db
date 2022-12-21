@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BookCreateComponent } from './book-create/book-create.component';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 import { BookListComponent } from './book-list/book-list.component';
+import { UnsavedChangesGuard } from './core/services/unsaved-changes-guard.service';
 
 const routes: Routes = [
   {
@@ -15,10 +16,12 @@ const routes: Routes = [
       {
         path: 'create',
         component: BookCreateComponent,
+        canDeactivate: [UnsavedChangesGuard],
       },
       {
         path: ':id',
         component: BookDetailComponent,
+        canDeactivate: [UnsavedChangesGuard],
       },
     ],
   },

@@ -1,1 +1,5 @@
-<app-book-form *ngIf="book" [book]="book"></app-book-form>
+<app-book-form
+  *ngIf="book"
+  [book]="book"
+  (bookChanged)="onBookChanged($event)"
+></app-book-form>
