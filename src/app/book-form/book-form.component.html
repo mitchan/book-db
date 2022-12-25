@@ -14,13 +14,22 @@
     <input name="isbn" matInput formControlName="isbn" />
   </mat-form-field>
 
-  <button type="submit" mat-flat-button color="primary">Submit</button>
+  <button
+    type="submit"
+    mat-flat-button
+    color="primary"
+    data-testid="submit-btn"
+  >
+    Submit
+  </button>
+
   <button
     *ngIf="book.id"
     type="button"
     mat-flat-button
     color="warn"
     (click)="onDelete()"
+    data-testid="delete-btn"
   >
     Delete book
   </button>
